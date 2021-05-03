@@ -1,0 +1,205 @@
+h1{
+  float: right;
+  margin-top: 1px;
+  margin-bottom: 0vh;
+  font-family: "Dosis";
+}
+/*Having the name in the top right corner was decided as your eyes naturally fall into place and notice
+it. It is also out of the way and clear for the user to see*/
+.menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #BBBBBB;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+/*These settings were chosen for the menu to fully fit the screen when the menu is open, this is so no
+other content is distracting the user. The transition decides the speed of the transition. I wanted this to be quick,
+almost unnoticable, but I included the transition as it's smoother on the eyes than a sudden opening.*/
+.menu a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+  font-family: "Dosis";
+}
+/*I wanted the page links to be large and clear but not over bearing. I wanted there to be enough space
+between the links, hence the padding, to allow for finger room due to it being a mobile website.*/
+.menu a:hover{
+  color: #f1f1f1;
+}
+/*Adding a simple hover colour change is purely asthetics for when the user clicks the link it changes colour for the split
+second before the page loads, it can also notify the user whether or not the link was clicked correctly.*/
+.menu .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*This ensures that the close button that appeared when the meny opened appears in the top left corner*/
+a:link{
+  color: #000000;
+  text-decoration: none;
+}
+a:visited{
+  color: #000000;
+  text-decoration: none;
+}
+a:hover{
+  color: #000000;
+  text-decoration: none;
+}
+a:active{
+  color: #000000;
+  text-decoration: none;
+}
+/*These link colours were chosen so any links throughout the website would remain the same colour
+regardless of its status. Again this is purely asthetic.*/
+.button{
+  height: 5vh;
+  width: 5vh;
+  margin-top: 2px;
+  position: fixed;
+}
+.back{
+  height: 5vh;
+  width: 5vh;
+  margin-top: 2px;
+  position: fixed;
+}
+/*The button wanted to be small enough in the corner of the page but large enough for a finger to comfortable click
+on and access. the position is also fixed meaning the menu moves when the page moves, so the user doesn't need to
+scroll back to the top of the page*/
+.socialmedia{
+  text-align: center
+}
+/*The social media icons were centralised to balance out the page aesthetically*/
+h2{
+  padding: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+  margin: 0px;
+  font-family: "Dosis"
+}
+p{
+  margin: 0px;
+  font-family: "Dosis"
+}
+h3{
+  font-family: "Dosis";
+  margin: 2px
+}
+.slide{
+  max-width: 85vw;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+.slide2{
+  max-width: 85vw;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+/*The slideshows wanted to take up the majority of the page.*/
+/*The content holding aspects all have the same border, this is to break up the content aswell as add
+dimension to the page*/
+.slides2{
+  display: none;
+}
+.text2{
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.4);
+  font-family: "Dosis";
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding-bottom: 10px
+}
+.column{
+  flex: 50%;
+  padding: 0 4px
+}
+.column .grid{
+  margin-top: 8px;
+}
+.grid{
+  height: 20vh
+}
+/*After finding a tutorial to create a image grid, css was included to allow the images
+to form the grid seen on the website. A small amount of padding was added to allow
+the images to break out and the images were ordered in a specific way, in the code,
+for the layout to work best*/
+video{
+  width: 85vw;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*The video width was kept the same at the width as the slideshow*/
+h4{
+  margin: 0;
+  font-family: "Dosis"
+}
+audio{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000
+}
+footer{
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000;
+  margin:5px;
+  padding:5px
+
+}
+.grid:hover{
+  transform: scale(1.5);
+}
+/*Due to the grid image gallery, it was a struggle to try and allow the images to open upon clicking
+on them, after a lot of trial and error it was decided to simply add a transformation on the hover
+of the image to allow the image to slightly scale in size. This isn't ideal, but it was the best
+solution for the time restrictions.
+Although the padding should have a unit, if a unit is added it messes up the layout when the image
+is clicked on, therefore the unit was left out.*/
+.video, .audio, .photo{
+  text-align: center;
+}
+.text{
+  font-family: "Dosis"
+}
+.main{
+  min-height: calc(100vh - 50.4px - 40px - 50px)
+}
+/*For the footer to appear at the bottom of the page this code https://www.youtube.com/watch?v=US_3XvufMLU
+was applied, although it did not work completely the values were manipulated until it worked*/

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Works</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+<!--Page title-->
+    <h1>Zoe Steward</h1>
+
+    <div id="myMenu" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<a href="index.html">Home</a>
+<a href="photo.html">Digital Works</a>
+<a href="write.html">Written Works</a>
+<a href="contact.html">Contact</a>
+</div>
+<span onclick="openNav()"><img class="button" src="img/button.png" alt="Menu"></span>
+
+    <div class="socialmedia">
+      <a href="https://www.youtube.com/channel/UCCANjIgOGLZtqsX7rsPyccQ"><img src="img/youtube.png" alt="https://www.youtube.com/channel/UCCANjIgOGLZtqsX7rsPyccQ"></a>
+      <a href="https://twitter.com/ZoeLouise08"><img src="img/twitter.png" alt="https://twitter.com/ZoeLouise08"> </a>
+      <a href="https://www.instagram.com/zoesteward_/?hl=en"><img src="img/insta.png" alt="https://www.instagram.com/zoesteward_/?hl=en"> </a>
+    </div>
+<!--Heading at the top of each page to tell the user what the page is on-->
+    <h2>Digital Work</h2>
+    <p>Here are some examples of my work in photography, videography and any other digital work I have.</p>
+
+<div class="photography">
+<h2>Photography</h2>
+<!--Creating a gallery is an easy and efficient way to show a load of images in one
+place. This did however create some problems with the images being able to open when clicked.
+Meaning this was then changed to a hover effects-->
+<div class="gallery">
+  <div class="column">
+    <img class="grid" src="img/beach.jpg" alt="beach">
+    <img class="grid" src="img/beach2.jpg" alt="beach">
+    <img class="grid" src="img/beach3.jpg" alt="beach">
+    <img class="grid" src="img/berries.jpg" alt="berries">
+    <img class="grid" src="img/daffidill.jpg" alt="daffidill">
+    <img class="grid" src="img/christmas.jpg" alt="christmas">
+    <img class="grid" src="img/flower.jpg" alt="flower">
+    <img class="grid" src="img/resignation.jpg" alt="resignation">
+    <img class="grid" src="img/book.jpg" alt="book">
+    <img class="grid" src="img/park.jpg" alt="park">
+    <img class="grid" src="img/horse.jpg" alt="horse">
+    <img class="grid" src="img/silohuette.jpg" alt="silohuette">
+  </div>
+</div></div>
+
+<div class="Videography">
+  <h2>Videography</h2>
+  <h3>Missing Minds</h3>
+<!--When including video or audio elements, it's a good idea, to include different
+formats to reduce the chances of the users browers not supporting the media.-->
+<div class="video"><video controls poster="img/poster.jpg">
+  <source src="vid/missingminds.mp4" type="video/mp4">
+  <source src="vid/missingminds.webm" type="video/webm">
+    I'm sorry your browser does not support the video format,
+            but you can watch the video <a href="vid/missingmind.mp4">Here</a>
+</video></div>
+<!--Small paragraphs of information on the piece was incuded using a <p> element-->
+  <p>"Missing Minds" was a production piece I had to create during my time at sixthform,
+  The piece had to be a minute long teaser trailer to one of our larger projects. It focused
+  on the effects on cinematography than anything else. Not only was this my first production,
+but I also produced it without any team, no camera or light operators, no editor. Everything was
+done by me, with a strict time limit. I am proud of this piece because of that, regardless of the quality.</p>
+<h4>Related Works</h4>
+<!--Including a link to the script on the written page is encluded for user experience-->
+<a href="write.html#dbi"><p>Unfornately, the original script for this production was lost. However here is the
+  script for the short film that this trailer was promoting. Unfornately I was unable to
+  produce the short due to the pandemic. Click here to see it.</p></a>
+</div>
+
+<div class="Other">
+  <h2>Other</h2>
+  <h3>Road Safety Animation (unfinished)</h3>
+<div class="video"><video controls poster="img/animation.jpg">
+  <source src="vid/animation.mp4" type="video/mp4">
+    <source src="vid/animation.webm" type="video/webm">
+</video></div>
+  <p>This animation was due to another piece of coursework. However this was never finished due to
+  finishing early. The animation was meant to be an education video for children teaching them about
+road safety. This was the first time I ever attempted 3D animation.</p>
+
+  <h3>Dead Mans Hate</h3>
+  <div class="audio"><audio controls>
+  <source src="aud/deadmanshate.mp3" type="audio/mpeg">
+  <source src="aud/deadmanshate.ogg" type="audio/ogg">
+    <p>Sorry, your browser does not support the audio files available,
+              however you can download the mp3 version <a href="aud/deadmanshate.mp3">here</a></p></audio></div>
+
+  <p>One of my first university assignments was to create a 2 minute audio piece telling a story of
+  our choice, I decided to do a reading of "Dead Mans Hate" a poem written by Robert Ervin Howard. I added
+the sound effects, which were a mix of sourced pieces and foley sounds I recorded myself. I then edited the piece to my standard
+in Adobe Audition</p>
+</div>
+
+
+  <footer>P2590333</footer>
+
+    <script>
+    function openNav() {
+    document.getElementById("myMenu").style.width = "100%";
+  }
+  function closeNav() {
+    document.getElementById("myMenu").style.width = "0";
+  }
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Written Works</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+<!--Page title-->
+    <h1>Zoe Steward</h1>
+
+    <div id="myMenu" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<a href="index.html">Home</a>
+<a href="photo.html">Digital Works</a>
+<a href="write.html">Written Works</a>
+<a href="contact.html">Contact</a>
+</div>
+<span onclick="openNav()"><img class="button" src="img/button.png" alt="Menu"></span>
+
+    <div class="socialmedia">
+      <a href="https://www.youtube.com/channel/UCCANjIgOGLZtqsX7rsPyccQ"><img src="img/youtube.png" alt="https://www.youtube.com/channel/UCCANjIgOGLZtqsX7rsPyccQ"></a>
+      <a href="https://twitter.com/ZoeLouise08"><img src="img/twitter.png" alt="https://twitter.com/ZoeLouise08"> </a>
+      <a href="https://www.instagram.com/zoesteward_/?hl=en"><img src="img/insta.png" alt="https://www.instagram.com/zoesteward_/?hl=en"> </a>
+    </div>
+
+    <div class="Scripts">
+      <h2>Written Works</h2>
+<!--Small introduction to the script-->
+      <h4>San Francisco</h4>
+      <p>Here is the opening of the first feature length script I have written. The first scene
+      came to me whilst I was listening to the song mentioned in the shower. I was inspired and wrote
+    a third of the original draft of the script the same night.</p>
+    <p>Click on the slideshow to be redirected to the script</p>
+<!--A pdf of the script was converted into a url and inserted into the <a> element, allowing the user
+to click on the slideshow and view the preview-->
+<!--A slideshow was used to show a few pages of the script, also acts as a link to the preview-->
+<div class="photo"><a href="san.html">
+    <div class="slideshow">
+    <div class="slides fade">
+    <img class="slide"  src="img/page1.jpg" alt="Page1">
+    <div class="text">Click to see the script</div>
+    </div>
+    <div class="slides fade">
+      <img class="slide"  src="img/page3.jpg" alt="Page3">
+      <div class="text">Click to see the script</div>
+    </div>
+    <div class="slides fade">
+      <img class="slide"  src="img/page5.jpg" alt="Page5">
+      <div class="text">Click to see the script</div>
+  </div> </div></a></div>
+
+    <a id="dbi"><h4>Deep Breath In (prev. Missing Minds Trailer)</h4></a>
+    <p>Here is the script for a short film I was creating, unfortunately, it was never finished due to the
+    pandemic. This is the production in relation to the 'Missing Minds' trailer, however during the writing
+  stage of this scipt, the name was changed to 'Deep Breath In'</p>
+  <p>Click on the slideshow to be redirected to the script</p>
+    <div class="photo"><a href="deep.html">
+        <div class="slideshow2">
+
+        <div class="slides2 fade2">
+          <img class="slide2"  src="img/dbipage2.jpg" alt="Page2">
+          <div class="text">Click to see the script</div>
+        </div>
+        <div class="slides2 fade2">
+          <img class="slide2"  src="img/dbipage4.jpg" alt="Page4">
+          <div class="text">Click to see the script</div>
+        </div>
+        <div class="slides2 fade2">
+          <img class="slide2"  src="img/dbipage6.jpg" alt="Page6">
+          <div class="text">Click to see the script</div>
+        </div></div></a>
+    </div></div>
+
+      <footer>P2590333</footer>
+
+    <script>
+    function openNav() {
+      document.getElementById("myMenu").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myMenu").style.width = "0";
+    }
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("slides");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 3500);
+}
+var slideIndex = 0;
+showSlides2();
+
+function showSlides2() {
+var i;
+var slides = document.getElementsByClassName("slides2");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides2, 3500);
+}
+    </script>
+  </body>
+</html>

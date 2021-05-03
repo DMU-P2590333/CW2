@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+
+    <meta charset="utf-8">
+<!--This piece of code allows the webpage to appropriately resize for any resolution of device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+<!--This code links the html file to the css style sheet. Therefore allowing the browser
+to know how to style the page-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+<!--The creators name placed in the top right, the biggest heading preset was pushed
+as it is the most important thing on the page.-->
+    <h1>Zoe Steward</h1>
+
+<!--To create the navigation menu, I used the code found at https://www.w3schools.com/howto/howto_js_sidenav.asp
+to create an animated menu using javascript.-->
+    <div id="myMenu" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!--The menus is created by using <a> elements to link to other pages-->
+<a href="index.html">Home</a>
+<a href="photo.html">Digital Works</a>
+<a href="write.html">Written Works</a>
+<a href="contact.html">Contact</a>
+</div>
+<!--This creates the hamburger button that can be seen in the top left corner which
+activates the menu animation-->
+<span onclick="openNav()"><img class="button" src="img/button.png" alt="Menu"></span>
+
+<!--It was chosen to have these social icons at the top for ease of access. these
+were created by downloaded png's of the social icon(in a design that would fit) then
+creating a link with the png-->
+  <div class="socialmedia">
+      <a href="https://www.youtube.com/channel/UCCANjIgOGLZtqsX7rsPyccQ"><img src="img/youtube.png" alt="https://www.youtube.com/channel/UCCANjIgOGLZtqsX7rsPyccQ"></a>
+      <a href="https://twitter.com/ZoeLouise08"><img src="img/twitter.png" alt="https://twitter.com/ZoeLouise08"> </a>
+      <a href="https://www.instagram.com/zoesteward_/?hl=en"><img src="img/insta.png" alt="https://www.instagram.com/zoesteward_/?hl=en"> </a>
+    </div>
+<!--Heading at the top of each page to tell the user what the page is on-->
+    <h2>Welcome To My Portfolio</h2>
+    <p> This website will allow you to view some of my work that I have created over the past couple of years</p>
+<!--A slideshow is placed at the start of the webiste, showing a few of the works.
+It also acts as a link to the photography page.-->
+<div class="photo"><a href="photo.html">
+      <div class="slideshow">
+  <div class="slides fade">
+    <img class="slide" src="img/resignation.jpg" alt="Chess">
+    <div class="text">A Game of Knowledge</div>
+  </div>
+    <div class="slides fade">
+        <img class="slide"  src="img/berries.jpg" alt="Berries">
+        <div class="text">Berries</div>
+    </div>
+    <div class="slides fade">
+        <img class="slide"  src="img/daffidill.jpg" alt="Daffidill">
+        <div class="text">Dying Beauty</div>
+    </div>
+    <div class="slides fade">
+        <img class="slide"  src="img/silohuette.jpg" alt="silohuette">
+        <div class="text">Sunsets and TV</div>
+    </div></div></a></div>
+<!--Infomation about them is also important which is why it is on the first page.-->
+<h2>About Me</h2>
+<p>I am a student at De Montfort University in Leicester, I am currently studying Media Production. I grew up in a little village in the middle of nowhere,
+  surrounded by fields. This sparked my love for nature and landscape photography at a very young age. My love for film and television started at
+  a young age too, this was something that grew into a true passion of mine, it wasn't really until secondary school that I realised that I could work
+  towards getting a career in the field. Throughout my educational career I have met some amazing teachers who helped me on my way, even believing in me
+  when I couldn't believe in myself. I have taken many interests in the different paths available in the industry, I have written my own scripts, produced my
+  own works, edited, directed and many other things. Being pushed to be a one man team to complete a production during my time at college definitely gave me
+  some experience in each field.</p>
+  <h4>Education</h4>
+  <p>10 GCSE's </p>
+  <p>Level 3 Diploma in IT : Double Distincion</p>
+  <p>Level 3 Foundation Diploma in Digital Media : Double Distinction</p>
+  <h4>Work Experience</h4>
+  <p>Assisstant for local photographer - 1 week</p>
+  <p>Teaching Assisstant in Media - 2 weeks </p>
+
+  <footer>P2590333</footer>
+<!--Javascript is a coding language to make the page interactive in one way or another, it Works
+different to the html and CSS languages as they give structure instead of interactive elements-->
+<script>
+//this code for the slideshow to be automatic was found of the W3Schools website, customised to fit the desired effect
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("slides");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 3500);
+}
+//this code for the meny was found on the W3schools website.
+function openNav() {
+    document.getElementById("myMenu").style.width = "100%";
+  }
+  function closeNav() {
+    document.getElementById("myMenu").style.width = "0";
+  }
+    </script>
+
+  </body>
+</html>
